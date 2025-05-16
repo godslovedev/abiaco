@@ -1,0 +1,37 @@
+<!-- complain.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Complaint - Abia Connect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="post">
+    <div class="form-container">
+      <h2>Submit a Complaint or Suggestion</h2>
+      <form id="complaintForm">
+        
+        <!-- Type of Submission -->
+        <label><strong>Type:</strong></label><br>
+        <label><input type="radio" name="type" value="Complaint" required /> Complaint</label>
+        <label><input type="radio" name="type" value="Suggestion" required /> Suggestion</label>
+        
+        <!-- Description -->
+        <textarea id="complaintDesc" placeholder="Describe your complaint or suggestion" required></textarea>
+        
+        <!-- Image Upload -->
+        <label><strong>Optional Image:</strong></label>
+        <input type="file" id="complaintImage" accept="image/*" />
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+        <p><a href="index.html">Back to Home</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/complain.js"></script>
+</body>
+</html>

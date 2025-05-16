@@ -1,0 +1,145 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <link rel="icon" href="download (10).png" type="image/x-icon" />
+  <meta name="description" content="Connect with locals in Abia - post, share, and discover what's happening." />
+  <meta name="keywords" content="Abia Connect, local business, community, services, marketplace" />
+  <meta name="author" content="Abia Connect" />
+    <meta name="theme-color" content="#6a5acd" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - Abia Connect</title>
+  <link rel="stylesheet" href="css/style.css" />
+ <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.register-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.form-section {
+    flex: 1;
+    background: #fff;
+    padding: 5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    color: #6a5acd;
+    margin-bottom: 1.7rem;
+}
+
+.form-container {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    width: 100%;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+}
+#signupForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.register-button {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.register-button a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #5a4cb0;
+}
+
+.form-container a {
+    color: #6a5acd;
+    text-decoration: none;
+}
+
+.form-section a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+
+</head>
+<body>
+  <div class="register-container">
+  <div class="form-container">
+    <h2>Create an Account</h2>
+    <form id="signupForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="text" id="whatsapp" placeholder="WhatsApp Number" required />
+      <input type="text" id="category" placeholder="Your Business Category" required />
+      <div>
+      <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I understand and agree to the <a href="#">terms of use</a> and <a href="#">privacy policy</a> </label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="updates" name="updates">
+                    <label for="updates">Please send me occasional Abia news updates</label>
+                </div>
+      </div>
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="prelogin.html">Login here</a></p>
+    </form>
+  </div>
+
+     <div class="info-section">
+
+      <img width="200px" src="download (10).png" alt="Abia Connect Logo" />
+            <h3>Welcome to Abia Connect!</h3>
+            <h3>Why Join Us?</h3>
+            <ul>
+                <li><strong>Connect</strong> with local businesses and services.</li>
+                <li><strong>Discover</strong> new opportunities in your area.</li>
+                <li><strong>Engage</strong> with your community and support local entrepreneurs.</li>
+                <li><strong>Share</strong> your experiences and help others find the best services.</li>
+            </ul>
+        </div>
+    </div>
+
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

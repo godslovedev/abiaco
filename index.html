@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <link rel="icon" href="download (10).png" type="image/x-icon" />
+  <meta name="description" content="Connect with locals in Abia - post, share, and discover what's happening." />
+  <meta name="keywords" content="Abia Connect, local business, community, services, marketplace" />
+  <meta name="author" content="Abia Connect" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abia Connect - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+      .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 1.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5%;
+    
+}
+  </style>
+</head>
+<body>
+  
+     <header class="navbar" style="background-image: url(abiatower.jpg); background-size: cover;    box-shadow: 0 8px 20px rgba(245, 238, 238, 0.5);">
+     <div class="logo">
+        <img src="download (10).png" alt="" width="150px">
+        <h1 style="color: black;" >ABIA CONNECT</h1>
+    </div>    
+  
+    <nav>
+      <a href="post.html">New Post</a>
+      <a href="profile.html">My Profile</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    </nav>
+    <button onclick="localStorage.clear(); alert('Local storage cleared!');">Clear Storage</button>
+
+  </header>
+
+  <main>
+    <h2>Recent Posts</h2>
+    <div id="postList" class="post-list"></div>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

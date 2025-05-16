@@ -1,0 +1,56 @@
+<!-- post.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+  .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 1.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5%;
+    
+}
+</style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Post - Abia Connect</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  
+    <header class="navbar" style="background-image: url(abiatower.jpg); background-size: cover;    box-shadow: 0 8px 20px rgba(245, 238, 238, 0.5);">
+     <div class="logo">
+        <img src="download (10).png" alt="" width="150px">
+        <h1 style="color: black;" >ABIA CONNECT</h1>
+    </div>    
+    </header>
+  <div class="post">
+  <div class="form-container">
+    <h2>Add / Edit Post</h2>
+    <form id="postForm">
+      <input type="text" id="productTitle" placeholder="Product Title" required />
+      <textarea id="productDesc" placeholder="Product Description" required></textarea>
+      <input type="number" id="productPrice" placeholder="Price (₦)" required />
+      <input type="file" id="productImage" accept="image/*" />
+      <button type="submit">Submit Post</button>
+      <p><a href="index.html">Back to Home</a></p>
+    </form>
+  </div>
+</div>
+
+  <script src="js/post.js"></script>
+</body>
+</html>

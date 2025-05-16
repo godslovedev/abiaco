@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Portal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: url(abiatower.jpg) no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: rgba(51, 74, 58, 0.7);
+      padding: 2rem;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 8px 20px rgba(245, 238, 238, 0.5);
+    }
+
+    .container h1 {
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .login-option {
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: #ffffff10;
+      border: 2px solid #ffffff30;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .login-option:hover {
+      background-color: #ffffff30;
+      transform: scale(1.03);
+    }
+
+    .login-option a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1rem;
+      display: block;
+    }
+
+    @media (max-width: 500px) {
+      .container h1 {
+        font-size: 1.5rem;
+      }
+
+      .login-option a {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Login Portal</h1>
+    <div class="login-option">
+      <a href="admlog.html">Log in as Admin</a>
+    </div>
+    <div class="login-option">
+      <a href="login.html">Log in as Citizen</a>
+    </div>
+    <div class="login-option">
+      <a href="">Log in as Government Representative</a>
+    </div>
+  </div>
+</body>
+</html>

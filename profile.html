@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="download (10).png" type="image/x-icon" />
+  <meta name="description" content="Connect with locals in Abia - post, share, and discover what's happening." />
+  <meta name="keywords" content="Abia Connect, local business, community, services, marketplace" />
+  <meta name="author" content="Abia Connect" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile - Abia Connect</title>
+  <link rel="stylesheet" href="css/style.css" />
+<style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+p{
+    margin-top: .9rem;
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    color: #275e05;
+}
+.p{
+  width: 100%;
+
+}
+
+.register-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+</style>
+</head>
+<body>
+    <div class="register-container">
+  <div class="form-container">
+    <h2>My Profile</h2>
+    <form id="profileForm">
+      <img id="profileImage" src="assets/images/default-profile.png" alt="Profile Picture" style="width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:10px;">
+      <input type="file" id="profilePic" accept="image/*" />
+     <div class="p"><p>Full Name</p></div>
+      <input type="text" id="profileName" placeholder="Full Name" required />
+      <div class="p"><p>email</p></div>
+      <input type="email" id="profileEmail" placeholder="Email" disabled />
+      <div class="p"><p >ABSSIN NUMBER</p></div>
+      <input type="text" id="profilePhone" placeholder="ABSSIN Number" />
+      <div class="p"><p >WhatsApp Number</p></div>
+      <input type="text" id="profileWhatsapp" placeholder="WhatsApp Number" required />
+      <div class="p"><p>Category</p></div>
+      <input type="text" id="profileCategory" placeholder="Business Category" required />
+
+      <button type="submit" id="saveProfile">Save Changes</button>
+      <a href="" style="text-decoration: none; color: rgb(7, 94, 35);"> <p>Edit profile</p></a>
+
+      <p>Get your ABSSIN number.  Click on the ABSSIN button Below</p>
+         <div class="links">
+                <a href="index.html">Home</a>
+                <a href="post.html">New Post</a>
+                <a href="https://abiapay.com/create-abssin">ABSSIN</a>
+                <a href="">Applications</a>
+                <a href="complain.html">report/complain</a>
+                <a href="index.html">market place</a>
+              </div>
+              
+    </form>
+  </div>
+    <div class="info-section">
+
+      <img width="200px" src="download (10).png" alt="Abia Connect Logo" />
+            <h3>Welcome to Abia Connect!</h3>
+            <ul>
+                <li><strong><a href="index.html">Connect</a></strong> with local businesses and services.</li>
+                <li><strong><a href="index.html">Discover</a></strong> new opportunities in your area.</li>
+                <li><strong><a href="index.html">Know</a></strong> what the government is doing and partner with the Government</li>
+            </ul>
+              </div>
+    </div>
+
+
+  <script src="js/profile.js"></script>
+</body>
+</html>
