@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       saveComplaint(newComplaint);
       alert("Your submission has been sent to the admin.");
-      window.location.href = "index.html";
+      window.location.href = "profile.html";
     };
 
     if (imageFile) {
