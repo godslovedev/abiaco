@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
     <h3>${post.title}</h3>
     <p>${post.description}</p>
-    <p><strong>Price:</strong> ₦${post.price}</p>
   </div>
   <div class="post-right">
     <img src="${post.image}" alt="Product Image" class="post-image" />
