@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       localStorage.setItem("posts", JSON.stringify(posts));
       alert(editingPost ? "Post updated!" : "Post created!");
-      window.location.href = "profile.html";
+      window.location.href = "index.html";
     };
 
     if (imageFile) {
